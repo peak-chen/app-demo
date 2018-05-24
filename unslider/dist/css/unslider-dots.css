@@ -1,0 +1,64 @@
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+
+.unslider-nav ol li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 1px;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.unslider-nav ol li.unslider-active {
+    background: #cecece;
+    cursor: default;
+}
+
+/*banner中的图对象*/
+div.banner.unslider-horizontal {
+    height: 100% ;
+}
+
+.banner ul li a img {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.unslider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+
+.unslider-nav-hide {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    display: none !important;
+}

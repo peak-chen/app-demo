@@ -1,0 +1,100 @@
+.lay-all {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    height: 100%;
+    max-height: 1440px;
+    min-height: 480px;
+    margin: 0 auto;
+    background: #f3f5f9;
+    position: absolute;
+}
+
+.lay-top {
+    height: 40%;
+    background: #fff;
+    z-index: 0;
+}
+
+.lay-rest {
+    height: 60%;
+    background: #fff;
+    text-align: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+.item > ul {
+    width: 100%;
+    height: 100%;
+}
+
+.item > ul > li {
+    width: 33.3333%;
+    float: left;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item > ul > li > a {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.item > ul > li > a > img {
+    width: 40%;
+    max-width: 93px;
+    min-width: 32px;
+    height: 40%;
+    max-height: 93px;
+    min-height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*字体跟随屏幕尺寸变化*/
+.item > ul > li > a > p {
+    text-align: center;
+    color: #929292;
+    font-size: 3vw
+}
+
+@media (min-width: 480px) {
+    p {
+        font-size: 24px
+    }
+}
+
+@media (max-width: 640px) {
+    p {
+        font-size: 14px
+    }
+}
+
+/*单图样式(不带拖拽,与unlisder中带拖拽样式保持一致)*/
+div.lay-top .img-banner {
+    position: relative;
+    top: 0;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+div.lay-top .img-decoration {
+    position: absolute;
+    margin-bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 60%;
+    z-index:1 ;
+}

@@ -1,0 +1,58 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    /*当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有是以边框开始计算宽度  百分比*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "sans-serif";
+    color: #4d4d4d;
+}
+
+a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    /*清除移动端默认的表单样式*/
+    -webkit-appearance: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*字体跟随屏幕尺寸变化*/
+.cost_content {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 2vw;
+    padding-top: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+@media (min-width: 480px) {
+    .cost_content{
+        font-size: 24px
+    }
+}
+@media (max-width: 640px) {
+    .cost_content{
+        font-size: 14px
+    }
+}

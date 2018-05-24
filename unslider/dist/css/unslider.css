@@ -1,0 +1,73 @@
+.unslider {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    /*Added*/
+    position: relative;
+    height: 100%;
+}
+
+.unslider-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.unslider-wrap.unslider-carousel > li {
+    float: left
+}
+
+.unslider-vertical > ul {
+    height: 100%
+}
+
+.unslider-vertical li {
+    float: none;
+    width: 100%
+}
+
+.unslider-fade {
+    position: relative
+}
+
+.unslider-fade .unslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8
+}
+
+.unslider-fade .unslider-wrap li.unslider-active {
+    z-index: 10
+}
+
+.unslider li, .unslider ol, .unslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+}
+
+.unslider-arrow {
+    position: absolute;
+    z-index: 2;
+    top:46%;
+    cursor: pointer;
+    height: 36px;
+    width: 22px;
+}
+
+.unslider-arrow.prev {
+    left: 20px;
+    right: auto;
+    background:url('../images/arrow-prev.png') no-repeat;
+    width: 20px;
+    height: 35px;
+}
+
+.unslider-arrow.next {
+    left: auto;
+    right: 20px;
+    background:url('../images/arrow-next.png') no-repeat;
+}
